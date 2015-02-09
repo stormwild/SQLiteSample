@@ -22,6 +22,13 @@ namespace SQLiteConsole
 			var displayAlbums = DisplayAlbums();
 			displayAlbums.Wait();
 
+			Console.WriteLine("\n=======================================\n");
+
+			Console.WriteLine("List of Albums with Artist");
+
+			var displayAlbumsWithArtist = DisplayAlbumWithArtist();
+			displayAlbumsWithArtist.Wait();
+
 			Console.ReadLine();
 		}
 
@@ -40,6 +47,15 @@ namespace SQLiteConsole
 			{
 				var artists = ctx.Artists.Where(artist => artist.Name.StartsWith("A"));
 				await artists.ForEachAsync(artist => Console.WriteLine(artist.Name));
+			}
+		}
+
+		private static async Task DisplayAlbumWithArtist()
+		{
+			using (var ctx = new ChinookContext())
+			{
+				var albums = ctx.Albums.Where(album => album.Artist.Name.StartsWith("A"));
+				await albums.ForEachAsync(album => Console.WriteLine(album.Title + " by " + album.Artist.Name));
 			}
 		}
 
