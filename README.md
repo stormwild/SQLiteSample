@@ -4,9 +4,9 @@ Demonstrates usage of SQLite and EF6 in a console app
 
 # Prerequisites
 
-System.Data.SQLite 1.0.94.1 
-Chinook SQLite Database
-EF6
+* System.Data.SQLite 1.0.94.1 
+* Chinook SQLite Database
+* EF6
 
 # Setup
 
@@ -86,10 +86,10 @@ Your migration code may need to use the SQLite api directly.
 
 # References
 
-http://stackoverflow.com/questions/22174212/entity-framework-6-with-sqlite-3-code-first-wont-create-tables/23128288#23128288
-http://hintdesk.com/sqlite-with-entity-framework-code-first-and-migration/
-https://damienbod.wordpress.com/2013/11/18/using-sqlite-with-entity-framework-6-and-the-repository-pattern/
-http://brice-lambson.blogspot.no/2012/10/entity-framework-on-sqlite.html
+* http://stackoverflow.com/questions/22174212/entity-framework-6-with-sqlite-3-code-first-wont-create-tables/23128288#23128288
+* http://hintdesk.com/sqlite-with-entity-framework-code-first-and-migration/
+* https://damienbod.wordpress.com/2013/11/18/using-sqlite-with-entity-framework-6-and-the-repository-pattern/
+* http://brice-lambson.blogspot.no/2012/10/entity-framework-on-sqlite.html
 
 
 
