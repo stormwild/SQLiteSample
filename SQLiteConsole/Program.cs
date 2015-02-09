@@ -15,10 +15,12 @@ namespace SQLiteConsole
 			var displayArtists = DisplayArtists();
 			displayArtists.Wait();
 
-			/*Console.WriteLine("List of Albums");
+			Console.WriteLine("\n=======================================\n");
+
+			Console.WriteLine("List of Albums");
 
 			var displayAlbums = DisplayAlbums();
-			displayAlbums.Wait();*/
+			displayAlbums.Wait();
 
 			Console.ReadLine();
 		}
