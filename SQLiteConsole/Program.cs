@@ -12,13 +12,13 @@ namespace SQLiteConsole
 		{
 			Console.WriteLine("List of Artists");
 
-			var displayArtistTask = DisplayArtists();
-			displayArtistTask.Wait();
+			var displayArtists = DisplayArtists();
+			displayArtists.Wait();
 
 			/*Console.WriteLine("List of Albums");
 
-			var displayAlbumsTask = DisplayAlbums();
-			displayAlbumsTask.Wait();*/
+			var displayAlbums = DisplayAlbums();
+			displayAlbums.Wait();*/
 
 			Console.ReadLine();
 		}
