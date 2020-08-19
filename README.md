@@ -26,6 +26,7 @@ Demonstrates usage of SQLite and EF6 in a console app
 
 `Column 'InvariantName' is constrained to be unique.  Value 'System.Data.SQLite' is already present.`
 
+```xml
     <?xml version="1.0" encoding="utf-8"?>
     <configuration>
         <entityFramework>
@@ -56,7 +57,8 @@ Demonstrates usage of SQLite and EF6 in a console app
             </DbProviderFactories>
           </system.data>
     </configuration>
-    
+```
+
 Not sure why, but make sure to have the config for entityFramework and DbProviderFactories this way.    
 
 ## Reference to complex property in entity class requires specifying the property that references the complex property
